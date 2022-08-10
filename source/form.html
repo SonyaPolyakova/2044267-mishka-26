@@ -44,7 +44,7 @@
         заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <!-- ФОРМА -->
-      <form class="form" action="/action_page.php" method="post">
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form__container">
           <div class="form__type form__type--radio">
             <h2 class="form__title">Тип</h2>
@@ -81,9 +81,10 @@
                   type="checkbox"
                   name="color"
                   value="white"
+                  id="white"
                   checked
                 />
-                <label class="form__chechbox-label">Белый</label>
+                <label class="form__chechbox-label" for="white">Белый</label>
               </li>
               <li class="form__item">
                 <input
@@ -91,9 +92,10 @@
                   type="checkbox"
                   name="color"
                   value="grey"
+                  id="grey"
                   checked
                 />
-                <label class="form__checkbox-label">Серый</label>
+                <label class="form__checkbox-label" for="grey">Серый</label>
               </li>
               <li class="form__item">
                 <input
@@ -101,8 +103,11 @@
                   type="checkbox"
                   name="color"
                   value="tiffani"
+                  id="tiffani"
                 />
-                <label class="form__checkbox-label">Тиффани</label>
+                <label class="form__checkbox-label" for="tiffani"
+                  >Тиффани</label
+                >
               </li>
               <li class="form__item">
                 <input
@@ -110,8 +115,9 @@
                   type="checkbox"
                   name="color"
                   value="black"
+                  id="tiffani"
                 />
-                <label class="form__checkbox-label">Черный</label>
+                <label class="form__checkbox-label" for="pink">Черный</label>
               </li>
               <li class="form__item">
                 <input
@@ -119,8 +125,9 @@
                   type="checkbox"
                   name="color"
                   value="pink"
+                  id="pink"
                 />
-                <label class="form__checkbox-label">Розовый</label>
+                <label class="form__checkbox-label" for="orange">Розовый</label>
               </li>
               <li class="form__item">
                 <input
@@ -128,6 +135,7 @@
                   type="checkbox"
                   name="color"
                   value="orange"
+                  id="orange"
                 />
                 <label class="form__checkbox-label">Оранжевый</label>
               </li>
@@ -140,30 +148,35 @@
           <div class="form__type form__type--name">
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__name-label">Имя:</label>
+                <label class="form__name-label" for="name">Имя:</label>
                 <input
                   class="form__name-input"
                   type="text"
                   name="firstname"
                   placeholder="Введите ваше имя*"
+                  id="firstname"
                 />
               </li>
               <li>
-                <label class="form__name-label">Фамилия:</label>
+                <label class="form__name-label" for="lastname">Фамилия:</label>
                 <input
                   class="form__name-input"
                   type="text"
                   name="lastname"
                   placeholder="Введите вашу фамилию*"
+                  id="lastname"
                 />
               </li>
               <li>
-                <label class="form__name-label">Отчество:</label>
+                <label class="form__name-label" for="middlename"
+                  >Отчество:</label
+                >
                 <input
                   class="form__name-input"
                   type="text"
                   name="middlename"
                   placeholder="Отчество, если желаете"
+                  id="middlename"
                 />
               </li>
             </ul>
@@ -201,9 +214,14 @@
         <div class="form__container">
           <div class="form__type form__type--textarea">
             <label class="form__title" for="comment-field">ДОП</label>
-            <textarea name="comment" id="comment-field" rows="7" required>
-           Опишите все ваши пожелания к заказу</textarea
+            <textarea
+              name="comment"
+              id="comment-field"
+              rows="7"
+              placeholder="Опишите все ваши пожелания к заказу"
+              required
             >
+            </textarea>
             <p>*Поля обязательны для заполнения</p>
           </div>
         </div>
